@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/globals.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/topicos.css">
+    <title>Gerenciar Tópicos</title>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html">Início</a>
+        <a href="">Gerenciar Tópicos</a>
+    </header>
+
+    <main class="box" id="box">
+        <div style="width: 100%; display: flex; justify-content: end; margin-bottom: 20px;">
+            <a id="add_topico" class="button">Criar Tópico</a>
+        </div>
+        
+    </main>
+
+    <!-- Popup -->
+
+    <div class="popup" id="popup">
+
+        <div style="width: 100%; display: flex; justify-content: end;">
+            <a id="close_popup" style="cursor: pointer; margin: -15px -10px 20px auto;">x</a>
+        </div>
+
+        <form id="formulario">
+
+            <div>
+                <label for="nome_do_topico">Nome do Tópico:</label>
+                <input type="text" id="nome_topico" class="input" required>
+            </div>
+
+            <br>
+
+            <button id="btn_submit_topico" class="button">Criar Tópico</button>
+
+        </form>
+    </div>
+
+
+    <script src="../../js/modules/data/topico.js"></script>
+    <script src="../../js/modules/popup-module.js"></script>
+    <script src="../../js/modules/topico-module.js"></script>
+    <script src="../../js/topicos.js"></script>
+</body>
+</html>

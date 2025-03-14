@@ -1,0 +1,43 @@
+@import url("globals.css");
+
+.box{
+
+    min-width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: var(--box-dark);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.253);
+}
+
+.button{
+
+    width: auto;
+    height: auto;
+    background-color: var(--background-dark);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.button:hover, .button:focus{
+    background-color: var(--hover-dark);
+}
+.popup{
+
+    position: fixed;
+    max-width: 700px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+
+    background-color: var(--box-dark);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.253);
+    display: none;
+}
+
+.input{
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
